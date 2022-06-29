@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <TextView
+        android:id="@+id/date_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.356"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.115" />
+
+    <TextView
+        android:id="@+id/time_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/date_details"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/date_details"
+        app:layout_constraintTop_toBottomOf="@+id/date_details"
+        app:layout_constraintVertical_bias="0.048" />
+
+    <TextView
+        android:id="@+id/systolic_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Systolic Pressure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/time_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/time_details"
+        app:layout_constraintTop_toBottomOf="@+id/time_details"
+        app:layout_constraintVertical_bias="0.035" />
+
+    <TextView
+        android:id="@+id/diastolic_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diastolic Pressure"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/systolic_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/systolic_details"
+        app:layout_constraintTop_toBottomOf="@+id/systolic_details"
+        app:layout_constraintVertical_bias="0.079" />
+
+    <TextView
+        android:id="@+id/heart_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Heart Rate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/diastolic_details"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/diastolic_details"
+        app:layout_constraintTop_toBottomOf="@+id/diastolic_details"
+        app:layout_constraintVertical_bias="0.098" />
+
+    <TextView
+        android:id="@+id/comment_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Comment"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/heart_details"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/heart_details"
+        app:layout_constraintTop_toBottomOf="@+id/heart_details"
+        app:layout_constraintVertical_bias="0.068" />
+
+    <Button
+        android:id="@+id/edit_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="216dp"
+        android:text="Edit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/comment_details"
+        app:layout_constraintStart_toStartOf="@+id/comment_details"
+        app:layout_constraintTop_toBottomOf="@+id/comment_details" />
+
+    <Button
+        android:id="@+id/backtomain_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="76dp"
+        android:text="Back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/edit_details"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/edit_details"
+        app:layout_constraintTop_toBottomOf="@+id/edit_details"
+        app:layout_constraintVertical_bias="0.126" />
+</androidx.constraintlayout.widget.ConstraintLayout>
